@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arnaud Stadler — Portfolio ML/MLOps</title>
+    <title>Contact — Arnaud Stadler</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> <!-- Ton propre style si besoin -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -17,42 +17,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
             <li class="nav-item"><a class="nav-link" href="propos.html">À propos</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Hero section -->
-    <section class="bg-light py-5 text-center">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Bienvenue !</h1>
-        <p class="lead mt-3">
-          Je suis <b>Arnaud Stadler</b>, <span class="text-primary">Junior Machine Learning & MLOps Engineer</span> passionné par la tech, la data et les solutions innovantes.
-        </p>
-        <a href="projets.html" class="btn btn-primary btn-lg mt-3">Voir mes projets</a>
-      </div>
-    </section>
-
-    <!-- A propos rapide -->
+    <!-- Section Contact -->
     <section class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <h2 class="fw-bold">Ce que je fais</h2>
-          <p>
-            🔹 Déploiement & automatisation de modèles ML<br>
-            🔹 Data Science et Machine Learning<br>
-            🔹 Solutions cloud & DevOps (MLOps)<br>
-            🔹 Formation & vulgarisation technique
-          </p>
-          <a href="a-propos.html" class="btn btn-outline-dark">En savoir plus</a>
-        </div>
-        <div class="col-md-4 text-center">
-          <!-- Ajoute ta photo pro dans /img/portrait.jpg si tu veux -->
-          <img src="img/portrait.jpeg" alt="Portrait Arnaud Stadler" class="rounded-circle img-fluid shadow" style="max-width: 200px;">
+      <h1 class="fw-bold mb-4 text-center">Contact</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <form>
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+          <div class="mt-4 text-center">
+            <p>Ou contactez-moi directement :</p>
+            <a href="mailto:arnaud.stadeler@ikmail.com" class="text-info">arnaud.stadeler@ikmail.com</a><br>
+            <a href="https://github.com/arnaudstdr" class="text-info" target="_blank">GitHub</a>
+          </div>
         </div>
       </div>
     </section>
@@ -68,7 +66,6 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
